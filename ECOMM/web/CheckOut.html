@@ -1,0 +1,180 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+        <link rel="stylesheet" href="css/style.css" /> 
+        <link rel="stylesheet" href="css/notification.css"/>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        
+        <title>Ibots | Checkout</title>
+
+
+        <link rel="icon" href="resources/logo.png"/>
+    </head>
+
+    <body class="body-img1" onload="check(); include(); loadData();">
+        
+        <div id="header"></div>
+        
+        <div class="col-12 container-fluid">
+            <div class="row">
+
+                <p class="text-danger" id="message"></p>
+
+                <div class="col-12">
+                    <div class="row">
+                        <form class="row g-3 needs-validation col-lg-6 mb-4" novalidate> 
+                            <div class="form-group input-group">
+                                <input type="checkbox" id="checkbox1"/>
+                                <label class="ms-2 mt-1" for="checkbox1">Same as your current address?</label>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustomUsername" class="form-label">First Name</label>
+                                <div class="input-group has-validation">
+                                    <input type="text" class="form-control" placeholder="FirstName" id="first_name"/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustomUsername" class="form-label">Last Name</label>
+                                <div class="input-group has-validation">
+                                    <input type="text" class="form-control" placeholder="LastName" id="last_name"/>
+                                </div>
+                            </div> 
+                            <div class="col-md-12 mt-4">
+                                <label for="validationCustom04" class="form-label">City</label>
+                                <select class="form-select" aria-label="Default select example" id="city">
+                                    <option value="0">Select</option>
+                                </select>
+                            </div> 
+                            <div class="col-md-12 mt-4">
+                                <label for="validationCustomUsername" class="form-label">Address Line 1</label>
+                                <div class="input-group has-validation">
+                                    <input type="text" class="form-control" placeholder="House number and street name" id="address1"/>
+                                </div>
+                            </div> 
+                            <div class="col-md-12 mt-4">
+                                <label for="validationCustomUsername" class="form-label">Address Line 2</label>
+                                <div class="input-group has-validation">
+                                    <input type="text" class="form-control" placeholder="Apartment, suite, unit, etc. (optonal)" id="address2"/>
+                                </div>
+                            </div> 
+
+                            <div class="col-md-6 mt-4">
+                                <label for="validationCustomUsername" class="form-label">Postal Code</label>
+                                <div class="input-group has-validation">
+                                    <input type="text" class="form-control" id="postal-code"/>
+                                </div>
+                            </div> 
+                            <div class="col-md-6 mt-4">
+                                <label for="validationCustomUsername" class="form-label">Mobile</label>
+                                <div class="input-group has-validation">
+                                    <input type="text" class="form-control" id="mobile"/>
+                                </div>
+                            </div>  
+                        </form>
+
+                      
+                        <div class="col-lg-6 bg-body-secondary mb-4" style="border-radius:10px; height: auto">
+                            <div class="row">
+
+                                <div class="col-12">
+                                    <label class="form-label fs-3 fw-bold ">Order Summary</label>
+                                </div> 
+                                <div class="col-12" id="st-checkout-body">
+                                    <div class="col-12" id="st-checkout-item"> 
+                                        <div class="row">   
+                                            <div class="col-6 mb-3">
+                                               <span class="fs-5" id="st-checkout-title"></span>&nbsp; 
+                                               <span class="fs-5" id="st-checkout-qty">1</span> 
+                                            </div>
+
+                                             <div class="col-6 mb-3 text-end">
+                                                <span class="fs-5 fw-bold">Rs.<span id="st-checkout-item-subtotal"></span></span>
+                                            </div> 
+                                        </div> 
+
+                                    </div>
+
+                                    <div class="col-12">
+                                        <hr />
+                                    </div>
+
+                                    <div class="col-12" id="st-order-subtotal"> 
+                                        <div class="row"> 
+                                              <div class="col-6 mb-3">
+                                                  <span class="fs-5">Subtotal</span>
+                                              </div>
+
+                                              <div class="col-6 mb-3 text-end">
+                                                  <span class="fs-5 fw-bold">Rs.<span id="st-checkout-subtotal"></span></span>
+                                              </div> 
+                                          </div>
+                                    </div> 
+
+                                    <div class="col-12">
+                                        <hr />
+                                    </div> 
+
+                                    <div class="col-12" id="st-order-shipping"> 
+                                        <div class="row"> 
+                                            <div class="col-6 mb-3">
+                                                <span class="fs-5">Shipping Charges</span>
+                                            </div>
+
+                                            <div class="col-6 mb-3 text-end">
+                                                <span class="fs-5 fw-bold">Rs.<span id="st-shipping-amount"></span></span>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="col-12">
+                                        <hr />
+                                    </div>
+
+                                    <div class="col-12" id="st-order-total"> 
+                                        <div class="row"> 
+                                            <div class="col-6 mb-3">
+                                                <span class="fs-4 fw-bold">Total</span>
+                                            </div>
+
+                                            <div class="col-6 mb-3 text-end">
+                                                <span class="fs-4 fw-bold">Rs.<span id="st-total"></span></span>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="col-12">
+                                        <hr />
+                                    </div> 
+                                </div> 
+
+                                <div class="col-12 mt-5 mb-3 d-grid">
+                                    <button class="btn btn-warning col-12 fs-5 fw-bold" type="button" onclick="checkOut();">CHECKOUT</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+        
+        <div id="footer"></div>
+        
+        <script type="text/javascript" src="https://www.payhere.lk/lib/payhere.js"></script>
+        
+        <script src="assets/js/include.js"></script> 
+        <script src="assets/js/checksignin.js"></script> 
+        <script src="assets/js/notification.js"></script>
+        <script src="assets/js/checkout.js"></script> 
+        <script src="assets/js/signout.js"></script> 
+    </body>
+</html>    
+
+ 

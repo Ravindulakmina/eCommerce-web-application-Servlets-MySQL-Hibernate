@@ -1,0 +1,514 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat' , sans-serif;
+
+}
+
+.body{
+    background-image: linear-gradient(rgba(37, 37, 37, 0.75),rgba(29, 29, 29, 0.75));
+    background-repeat: no-repeat; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.body2{
+    background-color: #ffffff;
+}
+ 
+.container{ 
+    border-radius: 15px;
+    border-width: 3px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0,0.35);
+    position: relative;
+    overflow: hidden;
+    width: 760px;
+    max-width: 60%;
+    min-height: auto;
+}
+
+.button{
+    height: 45px;
+    width: 200px;
+    background-color:rgb(247, 31, 150); 
+    border-radius: 3px; 
+    font-size: 16px;
+    font-weight: bold; 
+    border-color:rgb(247, 31, 150); 
+    border-width: 0px;
+    color: rgb(255, 255, 255); 
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+
+.button:hover{
+    background-color: #ffffff; 
+    border-color: rgb(247, 31, 150); 
+    border-width: 2px; 
+    color: #353535;
+  
+}
+
+.button2{
+    height: 45px;
+    width: 160px;
+    background-color:rgb(107, 31, 247); 
+    border-radius: 3px; 
+    font-size: 16px;
+    font-weight: bold; 
+    border-color:rgb(107, 31, 247); 
+    border-width: 0px;
+    color: rgb(255, 255, 255); 
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+
+.button2:hover{
+    background-color: #ffffff; 
+    border-color: rgb(107, 31, 247); 
+    border-width: 2px; 
+    color: #353535;
+  
+}
+
+.button3{
+    height: 45px;
+    width: 180px;
+    background-color:rgb(107, 31, 247); 
+    border-radius: 3px; 
+    font-size: 16px;
+    font-weight: bold; 
+    border-color:rgb(107, 31, 247); 
+    border-width: 0px;
+    color: rgb(255, 255, 255); 
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+
+.button3:hover{
+    background-color: #ffffff; 
+    border-color: rgb(107, 31, 247); 
+    border-width: 2px; 
+    color: #353535;
+  
+}
+
+
+.button4{
+    height: 45px;
+    width: 200px;
+    background-color:rgb(247, 31, 150); 
+    border-radius: 3px; 
+    font-size: 16px;
+    font-weight: bold; 
+    border-color:rgb(247, 31, 150); 
+    border: none;
+    color: rgb(255, 255, 255); 
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+
+.button5{
+    height: 45px;
+    width: 180px;
+    background-color:rgb(107, 31, 247); 
+    border-radius: 3px; 
+    font-size: 13px;
+    font-weight: bold; 
+    border-color:rgb(107, 31, 247); 
+    border-width: 0px;
+    color: rgb(255, 255, 255); 
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+
+.button5:hover{
+    background-color: #ffffff; 
+    border-color: rgb(107, 31, 247); 
+    border-width: 2px; 
+    color: #353535;
+  
+}
+  
+.button6{
+    height: 45px;
+    width: 200px;
+    background-color:rgb(247, 31, 150); 
+    border-radius: 3px; 
+    font-size: 13px;
+    font-weight: bold; 
+    border-color:rgb(247, 31, 150); 
+    border-width: 0px;
+    color: rgb(255, 255, 255); 
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+
+.button6:hover{
+    background-color: #ffffff; 
+    border-color: rgb(247, 31, 150); 
+    border-width: 2px; 
+    color: #353535;
+  
+}
+
+.button7{
+    height: 45px; 
+    background-color:rgb(247, 31, 150); 
+    border-radius: 3px; 
+    font-size: 13px;
+    font-weight: bold; 
+    border-color:rgb(247, 31, 150); 
+    border-width: 0px;
+    color: rgb(255, 255, 255); 
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+
+.button7:hover{
+    background-color: #ffffff; 
+    border-color: rgb(247, 31, 150); 
+    border-width: 2px; 
+    color: #353535;
+}
+
+.cartCheckoutButton{
+    height: 40px;
+    background-color:rgb(247, 31, 150); 
+    border-radius: 3px; 
+    font-size: 25px;
+    font-weight: bold; 
+    border-radius: 20px;
+    border-width: 0px;
+    color: rgb(255, 255, 255); 
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+
+.sortButton{
+    height: 45px; 
+    background-color:rgb(247, 31, 150); 
+    border-radius: 3px; 
+    font-size:15px;
+    font-weight: bold; 
+    border-color:rgb(247, 31, 150); 
+    border-width: 0px;
+    color: rgb(255, 255, 255); 
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+
+.sortButton:hover{
+    background-color: #ffffff; 
+    border-color: rgb(247, 31, 150);
+    border-width: 2px; 
+    color: #353535;
+}
+
+.clearButton{
+    height: 45px; 
+    background-color:rgb(107, 31, 247); 
+    border-radius: 3px; 
+    font-size: 15px;
+    font-weight: bold; 
+    border-color:rgb(107, 31, 247); 
+    border-width: 0px;
+    color: rgb(255, 255, 255); 
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+
+.clearButton:hover{
+    background-color: #ffffff; 
+    border-color: rgb(107, 31, 247);
+    border-width: 2px; 
+    color: #353535;
+  
+}
+
+.prevButton{
+    height: 45px; 
+    width: 150px;
+    background-color:rgb(247, 31, 150); 
+    border-radius: 3px; 
+    font-size: 15px;
+    font-weight: bold; 
+    border-radius: 6px;
+    border-color:rgb(107, 31, 247); 
+    border-width: 0px;
+    color: rgb(255, 255, 255); 
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+
+.prevButton:hover{
+    background-color: #ffffff; 
+    border-color:  rgb(247, 31, 150); 
+    border-width: 2px; 
+    color: #353535;
+  
+}
+
+.prevButton2{
+    height: 45px; 
+    width: 150px;
+    background-color:rgb(107, 31, 247); 
+    border-radius: 3px; 
+    font-size: 15px;
+    font-weight: bold; 
+    border-radius: 6px;
+    border-color:rgb(107, 31, 247); 
+    border-width: 0px;
+    color: rgb(255, 255, 255); 
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+
+.prevButton2:hover{
+    background-color: #ffffff; 
+    border-color: rgb(107, 31, 247); 
+    border-width: 2px; 
+    color: #353535;
+  
+}
+
+.button8{
+    height: 45px; 
+    background-color:rgb(247, 31, 150); 
+    border-radius: 3px; 
+    font-size: 13px;
+    font-weight: bold; 
+    border-color:rgb(247, 31, 150); 
+    border-width: 0px;
+    color: rgb(255, 255, 255); 
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer; 
+}
+
+.text1{
+   
+    font-size: 70px;
+    color: #ff00ff;
+    font-weight: bold;
+}
+ 
+.text2{
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: bold;}
+.text3{
+    font-size: 55px;
+    color: #8400ff;
+    font-weight: bold;
+    
+}
+
+.anime{
+    opacity: 0;
+    transform: translateY(80px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(0px); 
+    }
+}
+
+.text4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    font-style: italic; 
+    animation-delay: 0.5s;
+}
+
+
+.poster-img-1{
+    width: 520px;
+    height: 380px;
+    margin-left: 150px;
+    border-radius: 15px;
+}
+ 
+.body-img2{
+    width: 100%;
+    position:  relative;
+    background-image: linear-gradient(rgba(37, 37, 37, 0.75),rgba(29, 29, 29, 0.75)),url("../resources/images/image01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+ 
+ 
+.nav2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(63, 63, 63);
+    z-index: 7;
+} 
+ 
+.logo{
+    width:150px;
+    
+}
+.nav{
+    list-style: none;
+}
+
+.nav4{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.li{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight:bold;
+    font-size: 17px;
+
+}
+
+.li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #ff00f2;
+    display: block;
+    transition: 0.2s linear;
+}
+.li:hover::after{
+    width: 100%;
+}
+.li:hover{
+    color: #ff00f2;
+}
+
+.icon2:hover{
+    color: #ff00f2;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.icon{
+    height:40px;
+    color:white;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.text5{
+    font-size: 40px;
+    font-family: "Hobo std";
+    font-weight: bold;
+    color: #000;
+   
+}
+
+.text6{
+    font-size: 15px; 
+    font-weight: bold;
+    color: #000;
+   
+}
+ 
+
+.icon-bg:hover{ 
+    transition: 0.2s;
+    cursor: pointer; 
+}
+
+.categroy2{
+    width: 320px;
+    height: 270px;
+    border-radius: 20px;
+    margin-left: -12px;
+}
+
+.card1{
+    transition: 0.6s;
+}
+
+.card1:hover{
+    transform: scale(1.1);
+}
+
+.single-image{
+    width: 300px;
+    height: 300px; 
+}
+
+.icon2:hover{
+    color: #ffffff;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.text23{
+    font-size: 35px;
+    font-family: "Inria serif";
+    font-style: italic;
+    color: #ff0000;
+}
+
+.icon3{
+    width: 28px;
+    height: 28px;
+    background-color: #ff9100;
+    border-radius: 50%;
+}
+
+.address-icon{
+    width: 30px;
+    height: 30px;
+    background-color: #ff9100;
+    border-radius: 50%;
+}
+
+.icon4{
+    width: 20px;
+    margin-left: -5px;
+}
+
+.icon5{
+    width:60px; 
+}
+
+.text24{
+    font-size: 20px;
+    font-family: "Inria serif";
+}
+
+.signOut{
+    font-size: 15;
+    font-weight:bold;
+    color: rgb(107, 31, 247);
+}
+ 
+ 
+ 
+ 

@@ -1,0 +1,142 @@
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/notification.css"> 
+        <title>IBots | Cart</title>
+
+        <link rel="icon" href="resources/logo.png"/>
+
+        <style>
+            body {
+                overflow-x: hidden; /* Hide vertical scrollbar */
+            }
+        </style>
+    </head>
+
+    <body class="" onload="include(); loadCartItems(); check();">
+
+        <div id="header"></div>
+
+        <div class="fs-3 mt-4 fw-bolder mb-3 ms-5">Your Cart</div>
+
+        <p class="text-danger" id="message"></p>
+
+        <div class="col-12">
+            <div class="row"> 
+
+                <!-- products -->
+                <div class="col-12 col-lg-10 offset-lg-1" >
+                    <div class="row">
+
+
+                        <div class="card mb-3 mx-0 col-12" id="cart-item-container">
+                            <div class="row g-0" id="cart-item-row">
+
+                                <hr>
+
+                                <div class="col-md-4"> 
+                                    <a href="#" id="cart-item-a"><img src="https://via.placeholder.com/300x300" id="cart-item-image" class="img-fluid rounded-start" style="max-width: 300px;"></a> 
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="card-body">
+
+                                        <h3 class="card-title"> </h3>
+
+                                        <span class="fs-5">Title :<a href="#" class="ms-2" id="cart-item-title" style="text-decoration: none; color: black"></a></span>&nbsp;&nbsp;
+
+                                        <br />
+
+                                        <span class="fs-5 d-none">Size :<a href="#" class="ms-2 d-none" id="cart-item-size" style="text-decoration: none; color: black"></a></span>&nbsp;&nbsp;
+
+                                        <br />
+
+                                        <div class="col-12 mt-3 mb-3">
+                                            <div class="row">
+                                                <span class="col-lg-3 fs-5">Quantity :</span>&nbsp;  
+                                                <div class="col-lg-8">
+                                                    <div class="row">
+                                                        <div class="form-group">  
+                                                            <input type="number" class="form-control" id="cart-item-qty" value="1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <span class="fs-5">Price :</span>&nbsp;
+                                        <span class="text-black fs-5"><span id="cart-item-price"></span></span>&nbsp; 
+                                    </div>
+                                </div>
+
+                                <hr class="border border-2 border-dark">
+
+                                <div class="col-md-12 mt-3 mb-3">
+                                    <div class="row">
+                                        <div class="col-6 col-md-6">
+                                            <span class="fw-bold fs-5 text-black-50">Total <i
+                                                    class="bi bi-info-circle"></i></span>
+                                        </div>
+                                        <div class="col-6 col-md-6 text-end">
+                                            <span class="fw-bold fs-5 text-black">Rs.</span><span class="fw-bold" id="cart-item-subtotal"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- products --> 
+                </div>
+                <!-- summary -->
+                <div class="col-xl-4 col-lg-6 offset-xl-7 offset-lg-7 bg-body-secondary mb-5" style="border-radius:10px; height: auto">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <label class="form-label fs-3 ms-2 fw-bold">Your Order Summary</label>
+                        </div>
+
+                        <div class="col-12">
+                            <hr />
+                        </div>
+
+                        <div class="col-6 mb-3">
+                            <span class="fs-5 ms-2">Quantities item</span>
+                        </div>
+
+                        <div class="col-6 text-end mb-3">
+                            <span class="fs-5 fw-bold mx-2 " id="cart-total-qty"></span>
+                        </div> 
+
+                        <div class="col-6 mt-2">
+                            <span class="fs-5 ms-2">Total</span>
+                        </div>
+
+                        <div class="col-6 mt-2 text-end">
+                            <span class="fs-5 fw-bold ">Rs.<span id="cart-total"></span></span>
+                        </div>
+
+
+                        <a href="CheckOut.html" type="button" class="btn btn-warning col-11 ms-4 fw-bold text-center mt-4 mb-4" style="text-decoration: none;">Process to Checkout</a>
+
+
+                    </div>
+                </div>
+
+                <!-- summary -->
+            </div>
+        </div>
+
+        <div id="footer"></div>
+
+        <script src="assets/js/include.js"></script>
+        <script src="assets/js/cart.js"></script> 
+        <script src="assets/js/signout.js"></script> 
+        <script src="assets/js/checksignin.js"></script>
+        <script src="assets/js/notification.js"></script>
+        <script src="assets/js/signout.js"></script>
+    </body>
+
+</html>
